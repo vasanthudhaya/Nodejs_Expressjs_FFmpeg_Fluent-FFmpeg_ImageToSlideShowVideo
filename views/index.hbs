@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+<div class="card">
+    <div class="card-header">
+        Create Amazing Content
+    </div>
+    <div class="card-body">
+        <form method="post" action="/" enctype="multipart/form-data">
+            <label>First Slide</label>
+            <input class="form-control" type="text" name="start" value="First Slide"><br>
+            <div class="form-group">
+                <label>Slide Images</label>
+                <input class="btn btn-outline-primary" type="file" name="images" accept="image/x-png,image/jpg,image/jpeg" multiple><br>
+            </div>
+            <div class="form-group">
+                <label>Logo</label>
+                <input class="btn btn-outline-secondary" type="file" name="logo" accept="image/x-png,image/jpg,image/jpeg"><br>
+            </div>
+            <label>Image Slide text</label>
+            <input class="form-control" type="text" name="imgtext"  value="Images Slide Text"><br>
+            <label>Last Slide</label>
+            <input class="form-control" type="text" name="end"  value="Last Slide"><br>
+            <input class="btn btn-secondary" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+<div>
+    <video width="320" height="240" controls>
+        <source src="out.mp4" type="video/mp4">
+        <source src="out.mp4" type="video/ogg">
+    </video>
+</div>
